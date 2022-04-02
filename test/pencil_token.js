@@ -119,4 +119,4 @@ contract('PencilToken', (accounts) => {
             });
         });
     });
-})
+});
