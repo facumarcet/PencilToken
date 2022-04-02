@@ -37,6 +37,8 @@ contract PencilToken {
     }
 
     function approve(address _spender, uint256 _value) public returns (bool) {
+        // TODO: Implement some type of security to prevent attacks at the one described here:
+        // https://docs.google.com/document/d/1YLPtQxZu1UAvO9cZ1O2RPXBbT0mooh4DYKjA_jp-RLM/edit#  
         allowance[msg.sender][_spender] = _value;
 
         emit Approval(msg.sender, _spender, _value);
